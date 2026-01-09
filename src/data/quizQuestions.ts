@@ -12,12 +12,12 @@ export const quizQuestions: QuizQuestion[] = [
     id: 1,
     question: "What is the first step in TCP's Three-Way Handshake?",
     options: [
-      "Client sends ACK to server",
-      "Server sends SYN to client",
       "Client sends SYN to server",
+      "Server sends SYN-ACK to client",
+      "Client sends ACK to server",
       "Server sends FIN to client"
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     difficulty: 'simple',
     explanation: "The client initiates the connection by sending a SYN (Synchronize) packet to the server."
   },
@@ -26,11 +26,11 @@ export const quizQuestions: QuizQuestion[] = [
     question: "Which Wireshark filter would you use to display only TCP packets?",
     options: [
       "filter tcp",
-      "show tcp",
       "tcp",
+      "show tcp",
       "display.tcp"
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
     difficulty: 'simple',
     explanation: "In Wireshark, simply typing 'tcp' in the display filter shows only TCP packets."
   },
@@ -40,10 +40,10 @@ export const quizQuestions: QuizQuestion[] = [
     options: [
       "Connection termination request",
       "Data acknowledgment",
-      "Connection initiation/synchronization",
-      "Urgent data present"
+      "Urgent data present",
+      "Connection initiation/synchronization"
     ],
-    correctAnswer: 2,
+    correctAnswer: 3,
     difficulty: 'medium',
     explanation: "SYN (Synchronize) flag is used to initiate a TCP connection and synchronize sequence numbers."
   },
@@ -64,12 +64,12 @@ export const quizQuestions: QuizQuestion[] = [
     id: 5,
     question: "What does TCP Window Size control?",
     options: [
+      "Amount of data sent before waiting for acknowledgment",
       "Maximum packet size allowed",
       "Number of retransmission attempts",
-      "Amount of data sent before waiting for acknowledgment",
       "Time to wait before timeout"
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
     difficulty: 'medium',
     explanation: "TCP Window Size defines how much data can be sent before waiting for an acknowledgment from the receiver."
   }
